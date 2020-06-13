@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cards</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Cards</div>
+        <button onclick="toggler()">Options</button>
+        <div id="add" class="add" style="display: none;">
+            Add Card <br>
+            Title: <input type="text" id="title">
+            Description: <textarea id="description"></textarea>
+            Answer: <textarea id="answer"></textarea>
+            <button onclick="add()">Add card</button>
+            <button class="delete" onclick="clean()">Clean form</button>
+            <button class="delete" onclick="reset()">Delete ALL cards</button>
+        </div>
+        
+    </div>
+    <script src="cards.js"></script>
+</body>
+</html>
