@@ -1,0 +1,66 @@
+.card{
+    width: 90px;
+    height: 150px;
+}
+
+button{
+    background-color: #0D47A1;
+    border-style: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #1565C0;
+}
+button:active{
+    border: 1px solid #0D47A1;
+    background-color: #1976D2;
+}
+
+p{
+    font-size: 20px;
+}
+
+.lose{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #c62828 ;
+}
+
+.sum{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #009688 ;
+}
+
+.win{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #EF6C00 ;
+    margin-bottom: 0px;
+}
+
+.win-list{
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #FFF59D ;
+}
+
+
+.description{
+    font-size: 16px;
+}
