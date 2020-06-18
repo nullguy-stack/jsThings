@@ -40,6 +40,9 @@ function restart(){
 }
 
 function getCard(){
+    if(players[0].sum == 21){
+        ui(2, players[0]);
+    }
     if(players[0].sum >= 21){
         update();
         end();
@@ -89,23 +92,6 @@ function ui(s, closer){
     }
     game.innerHTML += "<p class='sum'>Player sum: "+players[0].sum+"</p>";
     let table = document.createElement("table");
-    //let deck = document.createElement("tr");
-    //deck.className = 'playerDeck0';
-    //let td = document.createElement("td");
-    //td.innerHTML += p1.name;
-    //deck.appendChild(td);
-    /*
-    players[0].deck.forEach(card =>{
-        if(!card) return;
-        let td = document.createElement("td");
-        let c = document.createElement("img");
-        c.className = 'card';
-        c.src = card.image;
-        td.appendChild(c);
-        deck.appendChild(td);
-    });
-    */
-    //table.appendChild(deck);
     for(let i=0; i<players.length; i++){
         let deck2 = document.createElement("tr");
         deck2.className = 'playerDeck'+i;
