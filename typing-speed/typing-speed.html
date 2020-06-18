@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing speed</title>
+</head>
+<body>
+    <style>
+        td{
+            padding: 2px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #lose{
+            padding: 3px;
+            width: 494px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            display: none;
+            font-weight: bold;
+            background-color: #D84315;
+        }
+        button{
+            border-style: none;
+            padding: 5px 10px;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            background-color: #0D47A1;
+        }
+        button:hover{
+            background-color: #1565C0;
+        }
+        button:active{
+            background-color: #1E88E5;
+            border: 1px solid #1E88E5;
+        }
+        input[type="range"]{
+            background-color: #212121;
+        }
+    </style>
+    <h3>Type as fast as you can</h3>
+    <table class="info">
+        <tr id="info"></tr>
+    </table>
+    <table>
+        <td><button onclick="reset()">Reset</button></td>
+        <td><button id="play-btn" onclick="play()"></button></td>
+        <td><button onclick="fixed()">Fixed Speed</button></td>
+        <td><button onclick="variable()">Variable Speed</button></td>
+    </table>
+    <div>
+        <input type="range" name="speed" id="speed" min="0.1" max="3" step="0.1" onchange="fixed(this)" value="0.1">
+        <label id="value"></label>
+    </div>
+    <br>
+    <div id="lose"></div>
+    <div id="game"></div>
+
+    <script src="words.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
