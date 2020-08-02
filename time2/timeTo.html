@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeTo</title>
+</head>
+<body>
+    
+    <style>
+        body{
+            background-color: #009EAE;
+            font-size: 1rem;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "year month day hour minute second"
+            "info info info info info info";
+
+            width: 90vw;
+            height: 90px;
+            max-width: 600px;
+            margin: auto;
+        }
+        input{
+            height: 40px;
+            border-radius: 4px;
+            padding: 0.2em;
+        }
+        button{
+            border: none;
+            outline: none;
+            color: white;
+            background-color: #004D40;
+            border-radius: 6px;
+            padding: 1em;
+        }
+        button:hover{
+            background-color: #00796B;
+        }
+        button:active{
+            background-color: #009688;
+        }
+    </style>
+
+    <main>
+        <div class="input">
+            <p>Date you are waiting for</p>
+            <input type="date" id="date">
+            <button onclick="clean()">Clean</button>
+        </div>
+
+        <div class="container">
+            <p id="year"></p>
+            <p id="month"></p>
+            <p id="day"></p>
+            <p id="hour"></p>
+            <p id="minute"></p>
+            <p id="second"></p>
+            <p class="info">Years</p>
+            <p class="info">Months</p>
+            <p class="info">Days</p>
+            <p class="info">Hours</p>
+            <p class="info">Minutes</p>
+            <p class="info">Seconds</p>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
